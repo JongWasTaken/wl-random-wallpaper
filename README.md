@@ -1,13 +1,17 @@
 # wl-random-wallpaper
 Wrapper script for swww. Changes wallpapers on all monitors after a specified interval.  
-Requires `swww` and `wlr-randr`!
+Requires `python3`(any version probably), `swww`, `wlr-randr`!  
+Tested on `sway` and `Hyprland`.
 
 ## Configuration
-Open `wl-random-wallpaper` and change the variables at the top of the file.
+Edit `wl-random-wallpaper` and change the variables at the top of the file.
 
 ## Usage
-Launch with sway:  
-Add somthing like `exec "/home/user/.local/bin/wl-random-wallpaper"` to your sway config.
+Ensure all dependencies are installed.  
+### sway
+Add something like `exec "/home/user/.local/bin/wl-random-wallpaper"` to your sway config.  
 
+### Hyprland
+Add something like `exec-once = /home/user/.local/bin/wl-random-wallpaper` to your hyprland config.
 ## License
 Licensed under the MIT License.
