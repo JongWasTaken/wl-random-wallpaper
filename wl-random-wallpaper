@@ -18,7 +18,7 @@ def command(cmd):
 command("rm -rf  ~/.cache/swww/")
 
 if command("pidof swww-daemon") == "":
-    command("swww init")
+    subprocess.Popen(["swww-daemon"])
 
 command("killall swaybg")
 
